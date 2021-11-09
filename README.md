@@ -1,2 +1,2 @@
-# general-docs
-General Documentation for Work @CHTC
+# General Docs
+Repository of staff targeted documentation for things around the office.
