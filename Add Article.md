@@ -1,8 +1,3 @@
----
-layout: markdown-page
-title: Creating News Articles
----
-
 Table of Contents
 - [Using Markdown](#using-markdown)
 - [Adding Articles](#adding-article-to-the-website)
