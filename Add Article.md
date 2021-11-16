@@ -73,13 +73,23 @@ All of our websites have a preview location where you can view changes before ad
 Images can be added using either MD or HTML.
     
 1. Markdown
-    - To add a image in Markdown your user the syntax ```![Alternate Caption](/image/path)``` excluding the single quotes.
+    - To add a image in Markdown your user the syntax ```![Alternate Caption](/image/path)```.
     - Above this you can add styling with bootstrap by using {: .<class-name> }
     - For instance the below Markdown will show the demo image and float it to the right of the text:
         ```
             {: .float-right }
-            ![Demonstration Image](/images/demo_image.jpg)
+            ![Demonstration Image](images/demo_image.jpg)
         ```
+2. HTML
+    - Figure with caption
+        ```
+            <figure class="">
+              <img src="/image/path" class="" alt="Alternate Caption" width="" height="">
+              <figcaption class="figure-caption">Cover of La Patrie newspaper. July 8, 1921<br/></figcaption>
+            </figure>
+        ```
+    
+    
     
     
 
