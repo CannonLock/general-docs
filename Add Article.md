@@ -2,6 +2,8 @@ Table of Contents
 - [Using Markdown](#using-markdown)
 - [Adding Articles](#adding-article-to-the-website)
 - [Using Images](#using-images)
+    - [Reducing Image Size](#reducing-image-size)
+    - [Positioning Images](#positioning-images)   
 
 ### Using Markdown
 
@@ -65,6 +67,24 @@ All of our websites have a preview location where you can view changes before ad
       ![Create a PR](static/images/create_a_pr.jpg)
 
 ### Using Images
+    
+### Adding Images
+    
+Images can be added using either MD or HTML.
+    
+1. Markdown
+    - To add a image in Markdown your user the syntax '![Alternate Caption](/image/path)' excluding the single quotes.
+    - Above this you can add styling with bootstrap by using {: .<class-name> }
+    - For instance the below Markdown will show the demo image and float it to the right of the text:
+        ```
+            {: .float-right }
+            ![Demonstration Image](/images/demo_image.jpg)
+        ```
+    
+    
+
+    
+#### Reducing Image Size
 
 High definition images can take up space that slows down the website when it loads, because of this it is important to reduce this footprint before adding them to the website.
 
@@ -92,3 +112,8 @@ We will reduce this 2MB image to demonstrate.
 
 4. Use your new compressed image in the article.
    ![Compressed Image](static/images/demo_image.jpg)
+        
+#### Positioning Images
+
+
+      
