@@ -73,18 +73,31 @@ All of our websites have a preview location where you can view changes before ad
 Images can be added using either MD or HTML.
     
 1. Markdown
-    - To add a image in Markdown your user the syntax ```![Alternate Caption](/image/path)``` excluding the single quotes.
-    - Above this you can add styling with bootstrap by using {: .<class-name> }
-    - For instance the below Markdown will show the demo image and float it to the right of the text:
-        ```
+    - To add an image in Markdown your user the syntax ```![Alternate Caption](/image/path)``` excluding the single quotes.
+    - You can add classes to adjust how the image appears by using ```{: .<class-name> }``` above.
+      - All classes that can be used can be found [here](https://getbootstrap.com/docs/5.0/utilities/api/), but the ones you are most likely to use are [float](https://getbootstrap.com/docs/5.0/utilities/float/), and [image](https://getbootstrap.com/docs/5.0/content/images/) classes.
+    - Example: The below markdown shows the demo image with the class ```float-right``` which positions the image to the right of the text.
+        ```markdown
             {: .float-right }
             ![Demonstration Image](/images/demo_image.jpg)
         ```
     
-    
+2. HTML
+    - Images added with html will use the '[img]((https://www.w3schools.com/tags/tag_img.asp))' tag.
+    - The syntax for this is:
+        ```
+            <img class="optional-class" src="/path/to/image" alt="Description of image for the visually impaired"
+        ```
+    - Using HTML gives you more options such as having [figure captions](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
+        ```html
+            <figure>
+               <img src="/path/to/image" alt="Description">
+                <figcaption>The image caption</figcaption>
+            </figure>
+        ``` 
 
     
-#### Reducing Image Size
+### Reducing Image Size
 
 High definition images can take up space that slows down the website when it loads, because of this it is important to reduce this footprint before adding them to the website.
 
@@ -113,7 +126,15 @@ We will reduce this 2MB image to demonstrate.
 4. Use your new compressed image in the article.
    ![Compressed Image](static/images/demo_image.jpg)
         
-#### Positioning Images
+### Positioning Images
 
+To position images on the page you must use classes. 
+For markdown this means including ```[: .<class> }``` above the image syntax, and 
+for html this means adding ```class="<class>"``` inside the html tag. 
 
+Potential classes that can be used to position the image come from [Bootstrap Utilities](https://getbootstrap.com/docs/5.0/utilities/api/).
+
+The ones you will find the most helpful are:
+1. [Floats](https://getbootstrap.com/docs/5.0/utilities/float/)
+2. [Image Specific](https://getbootstrap.com/docs/5.0/content/images/)
       
