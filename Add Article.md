@@ -2,6 +2,7 @@ Table of Contents
 - [Using Markdown](#using-markdown)
 - [Adding Articles](#adding-article-to-the-website)
 - [Using Images](#using-images)
+    - [Adding Images](#adding-images)
     - [Reducing Image Size](#reducing-image-size)
     - [Positioning Images](#positioning-images)   
 
